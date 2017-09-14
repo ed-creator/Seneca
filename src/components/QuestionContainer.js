@@ -1,6 +1,8 @@
 // jshint ignore: start
 
 import React, {Component} from 'react';
+import QuestionToggle from './QuestionToggle';
+
 
 class QuestionContainer extends Component {
   constructor() {
@@ -9,8 +11,13 @@ class QuestionContainer extends Component {
 
   render() {
     return (
-      <div className="Mask">
-        <p>The answer is incorrect</p>
+      <div>
+        <div className="Mask">
+          <p>The answer is incorrect</p>
+        </div>
+        <div>
+
+        </div>
       </div>
     )
   }
