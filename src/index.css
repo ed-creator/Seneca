@@ -3,49 +3,66 @@ body {
 }
 
 .MaskV0 {
-  position: relative;
+  position: absolute;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 135px;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, rgba(250, 145, 97, 0.7), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
-  left: 350px;
-  top: 100px;
+
 
 }
 .MaskV1 {
-  position: relative;
+  position: absolute;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 135px;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, rgb(213, 165, 21), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
-  left: 350px;
-  top: 100px;
 }
 .MaskV2 {
-  position: relative;
+  position: absolute;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 135px;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, rgb(215, 212, 18), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
-  left: 350px;
-  top: 100px;
 }
 .MaskV3 {
-  position: relative;
+  position: absolute;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 135px;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, #47e4c1, #07cddd);
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
-  left: 350px;
-  top: 100px;
 }
 
 .Rectangle-5 {
@@ -88,6 +105,8 @@ body {
     color: white;
 }
 .Rectangle-6 {
+  position: absolute;
+  top: 0%;
   width: 1439px;
   height: 94px;
   background-image: linear-gradient(269deg, rgba(33, 21, 250, 0.3), rgba(83, 147, 246, 0.82) 68%, #64bff4);
@@ -159,6 +178,8 @@ body {
 }
 
 .BG-Copy {
+  position: absolute;
+  bottom: 0%;
   width: 1439px;
   height: 286px;
   background-color: #1f2532;

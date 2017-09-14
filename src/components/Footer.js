@@ -6,9 +6,11 @@ class Footer extends Component {
 
   render() {
     return (
-      <div className='Rectangle-6'>
-        
+      <div className='BG-Copy'>
+        <p>hi</p>
       </div>
     );
   }
 }
+
+export default Footer;
