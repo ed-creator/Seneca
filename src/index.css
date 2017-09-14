@@ -72,22 +72,38 @@ body {
   height: 45px;
   border-radius: 100px;
   border: solid 1px #fbfbfb;
-  opacity: 1;
-  z-index:1;
-
+  background-color: transparent;
+  z-index: 1;
 }
 
-.Rectangle-3 {
+.Rectangle-3-left{
+  position: relative;
   padding: 0;
   width: 163px;
   height: 45px;
   border-radius: 100px;
-  background-color: rgba(249, 249, 249, 0.5);
+  background-color: rgb(28, 27, 2);
   box-shadow: 0 0 6px 1px rgba(195, 51, 51, 0.5);
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
-  display:inline;
+  z-index: 2;
+  opacity: 0.4;
 }
+.Rectangle-3-right{
+  position: relative;
+  padding: 0;
+  left: 46.5%;
+  width: 163px;
+  height: 45px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px 1px rgba(195, 51, 51, 0.5);
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  z-index: 2;
+  opacity: 0.4;
+}
+
 
 .Rectangle-4 {
   padding: 0;
@@ -114,7 +130,6 @@ body {
 .navbar-element {
   position:relative;;
   left: 400px;
-
   bottom: -35px;
   padding: 1.5%;
   display:inline;
@@ -128,7 +143,9 @@ body {
   color: #ffffff;
 }
 
-.alignleft {
+.left-left {
+  position: relative;
+  left: 20px;
 	float: left;
   width: 79px;
   height: 18px;
@@ -139,8 +156,10 @@ body {
   text-align: center;
   color: #e66549;
 }
-.alignright {
-	float: right;
+.left-right {
+  position: relative;
+  right: 100px;
+	float: left;
   width: 79px;
   height: 18px;
   font-family: Muli;
@@ -149,6 +168,33 @@ body {
   letter-spacing: 0.4px;
   text-align: center;
   color: #ffffff;
+}
+
+.right-left {
+  position: relative;
+	float: right;
+  left: 110px;
+  width: 79px;
+  height: 18px;
+  font-family: Muli;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
+}
+.right-right {
+  position: relative;
+	float: right;
+  right: 20px;
+  width: 79px;
+  height: 18px;
+  font-family: Muli;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #e66549;
 }
 
 .aligncentre {
@@ -183,4 +229,18 @@ body {
   width: 1439px;
   height: 286px;
   background-color: #1f2532;
+}
+
+.Seneca {
+  position: relative;
+  top: 75.3px;
+  left: 245px;
+  width: 59px;
+  height: 14px;
+  font-family: ArialRoundedMT;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 0.88;
+  text-align: left;
+  color: #ffffff;
 }

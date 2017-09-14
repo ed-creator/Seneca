@@ -9,28 +9,29 @@ class QuestionToggle extends Component {
 
     this.state = {
       answer: true,
-
+      slider: 'left'
     }
   }
 
 
   setAnswer() {
-    // const ans = !this.state
     this.setState({answer: !this.state.answer});
-    this.props.callback(this.state.answer);
+    this.props.updateQuestionScores(this.state.answer);
+    if(this.state.slider === 'left') {this.setState({slider: 'right'})}
+    if(this.state.slider === 'right') {this.setState({slider: 'left'})}
+
   }
 
   render() {
-    // console.log(this.state.answer)
     return (
-      <div className='Rectangle-5'>
+      <div >
         <button className='Rectangle-5' onClick={() => this.setAnswer()} >
-          <div className='Rectangle-3'>
-            <p className="alignleft">{this.props.correct}</p>
-          </div>
           <div>
-           <p className="alignright">{this.props.incorrect}</p>
-         </div>
+            <div inline className={`Rectangle-3-${this.state.slider}`}>
+              <p className={`left-${this.state.slider}`}>{this.props.correct}</p>
+              <p className={`right-${this.state.slider}`}>{this.props.incorrect}</p>
+            </div>
+          </div>
         </button>
       </div>
     )
