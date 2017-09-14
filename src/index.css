@@ -70,6 +70,18 @@ body {
   text-align: center;
   color: #ffffff;
 }
+
+.aligncentre {
+  width: 728px;
+  height: 18px;
+  font-family: Muli;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .inner {
   position: absolute;
   top: 50%; left: 50%;

@@ -24,7 +24,7 @@ class QuestionContainer extends Component {
   }
 
   checkAnswer() {
-    const correct = 'The answer is correct'
+    const correct = 'The answer is correct!'
     const incorrect = 'The answer is incorrect'
     if(this.state.score === 3) { this.setState({answer_status: correct})  }
     if(this.state.score < 3) { this.setState({answer_status: incorrect})  }
@@ -41,7 +41,7 @@ class QuestionContainer extends Component {
             <QuestionToggle callback={this.updateScore} id='two' correct={'Option 1'} incorrect={'Option 2'} value='correct'/>
             <QuestionToggle callback={this.updateScore} id='three' correct={'Active'} incorrect={'Not Active'} value='correct'/>
           </div>
-          <p>{this.state.answer_status}</p>
+          <p className='aligncentre'>{this.state.answer_status}</p>
           </div>
       </div>
     )
