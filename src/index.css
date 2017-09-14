@@ -15,28 +15,37 @@ body {
 
 }
 .MaskV1 {
+  position: relative;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, rgb(213, 165, 21), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
+  left: 350px;
+  top: 100px;
 }
 .MaskV2 {
+  position: relative;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, rgb(215, 212, 18), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
+  left: 350px;
+  top: 100px;
 }
 .MaskV3 {
+  position: relative;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, #47e4c1, #07cddd);
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
+  left: 350px;
+  top: 100px;
 }
 
 .Rectangle-5 {
@@ -147,4 +156,10 @@ body {
   transform: translate(-50%,-50%);
   width: 200px;
   height: 200px;
+}
+
+.BG-Copy {
+  width: 1439px;
+  height: 286px;
+  background-color: #1f2532;
 }
