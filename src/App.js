@@ -9,13 +9,16 @@ import './App.css';
 
 
 class App extends Component {
+
+
   render() {
     return (
       <div className="App">
         <div className='Mask'>
-
+          <QuestionToggle correct={'Hot'} incorrect={'Cold'}/>
+          <QuestionToggle correct={'Option 1'} incorrect={'Option 2'}/>
+          <QuestionToggle correct={'Active'} incorrect={'Not Active'}/>
         </div>
-        <QuestionToggle value='hi'/>
       </div>
     );
   }

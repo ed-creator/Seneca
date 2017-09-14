@@ -1,12 +1,6 @@
 // jshint ignore: start
 
 import React, {Component} from 'react';
-import Toggle from 'react-toggle';
-// import { ToggleButton } from 'react-bootstrap';
-import Switch from 'react-toggle-switch';
-import ToggleButton from 'react-toggle-button'
-
-
 
 class QuestionToggle extends Component {
   constructor() {
@@ -26,7 +20,9 @@ class QuestionToggle extends Component {
     console.log(this.state.answer)
     return (
       <div className='Rectangle-5'>
-        <button className='Rectangle-5' onClick={() => this.setAnswer()}>
+        <button className='Rectangle-5' onClick={() => this.setAnswer()} >
+           <p className="alignleft">{this.props.correct}</p>
+           <p className="alignright">{this.props.incorrect}</p>
 
         </button>
 
@@ -36,12 +32,3 @@ class QuestionToggle extends Component {
 }
 
 export default QuestionToggle;
-
-
-
-
-
-{/* <label className="switch">
-<input type="checkbox"/>
-<span className="slider round"></span>
-</label> */}
