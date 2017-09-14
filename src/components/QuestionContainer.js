@@ -10,8 +10,10 @@ class QuestionContainer extends Component {
   render() {
     return (
       <div className="Mask">
-        Temp Info
+        <p>The answer is incorrect</p>
       </div>
     )
   }
 }
+
+export default QuestionContainer;

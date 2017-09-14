@@ -9,6 +9,6 @@ describe('QuestionContainer',() => {
 
   it('renders the container', () => {
     // console.log(note.debug())
-    expect(note.find('p').text()).toEqual('The answer is incorrect')
+    expect(question_container.find('p').text()).toEqual('The answer is incorrect')
   });
 });
