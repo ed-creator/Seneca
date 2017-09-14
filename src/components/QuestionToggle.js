@@ -28,7 +28,6 @@ class QuestionToggle extends Component {
            <p className="alignright">{this.props.incorrect}</p>
 
         </button>
-
       </div>
     )
   }

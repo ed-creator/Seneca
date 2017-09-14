@@ -1,17 +1,22 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10%;
+  padding: 10%;
   font-family: sans-serif;
 }
 
 .MaskV0 {
+  padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, rgba(250, 145, 97, 0.7), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
+  top: 50%;
+  left: 50%;
+
 }
 .MaskV1 {
+  padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
@@ -19,6 +24,7 @@ body {
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
 }
 .MaskV2 {
+  padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
@@ -26,6 +32,7 @@ body {
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
 }
 .MaskV3 {
+  padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
@@ -34,13 +41,18 @@ body {
 }
 
 .Rectangle-5 {
+  padding: 0;
+  margin: auto;
   width: 307px;
   height: 45px;
   border-radius: 100px;
   border: solid 1px #fbfbfb;
+  opacity: 1;
 }
 
 .Rectangle-3 {
+  padding: 0;
+
   width: 163px;
   height: 45px;
   border-radius: 100px;
@@ -72,6 +84,7 @@ body {
 }
 
 .aligncentre {
+  position:relative;;
   width: 728px;
   height: 18px;
   font-family: Muli;
@@ -80,8 +93,14 @@ body {
   letter-spacing: 0.4px;
   text-align: center;
   color: #ffffff;
-}
+  bottom:-60px;
 
+}
+.questionbox {
+  position:relative;;
+  bottom:-60px;
+
+}
 .inner {
   position: absolute;
   top: 50%; left: 50%;

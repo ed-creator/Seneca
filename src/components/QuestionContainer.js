@@ -35,10 +35,12 @@ class QuestionContainer extends Component {
     console.log(this.state.score)
     return (
       <div>
-        <div className={`MaskV${this.state.score}`}>
-          <div className=''>
+        <div centre className={`MaskV${this.state.score}`} >
+          <div className='questionbox'>
             <QuestionToggle callback={this.updateScore} id='one' correct={'Hot'} incorrect={'Cold'} value='correct'/>
+          <br/>
             <QuestionToggle callback={this.updateScore} id='two' correct={'Option 1'} incorrect={'Option 2'} value='correct'/>
+            <br/>
             <QuestionToggle callback={this.updateScore} id='three' correct={'Active'} incorrect={'Not Active'} value='correct'/>
           </div>
           <p className='aligncentre'>{this.state.answer_status}</p>
