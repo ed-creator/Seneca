@@ -24,9 +24,12 @@ class QuestionToggle extends Component {
     return (
       <div className='Rectangle-5'>
         <button className='Rectangle-5' onClick={() => this.setAnswer()} >
-           <p className="alignleft">{this.props.correct}</p>
+          <div className='Rectangle-3'>
+            <p className="alignleft">{this.props.correct}</p>
+          </div>
+          <div>
            <p className="alignright">{this.props.incorrect}</p>
-
+         </div>
         </button>
       </div>
     )

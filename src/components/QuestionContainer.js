@@ -18,8 +18,8 @@ class QuestionContainer extends Component {
 
   updateScore = (answer) => {
     var self = this
-    if(answer == true) { self.setState({score: self.state.score += 1}) }
-    if(answer == false) { self.setState({score: self.state.score -= 1}) }
+    if(answer === true) { self.setState({score: self.state.score += 1}) }
+    if(answer === false) { self.setState({score: self.state.score -= 1}) }
     self.checkAnswer()
   }
 
@@ -35,7 +35,7 @@ class QuestionContainer extends Component {
     console.log(this.state.score)
     return (
       <div>
-        <div centre className={`MaskV${this.state.score}`} >
+        <div className={`MaskV${this.state.score}`} >
           <div className='questionbox'>
             <QuestionToggle callback={this.updateScore} id='one' correct={'Hot'} incorrect={'Cold'} value='correct'/>
           <br/>
