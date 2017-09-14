@@ -8,7 +8,7 @@ class QuestionToggle extends Component {
 
 
     this.state = {
-      answer: false,
+      answer: true,
 
     }
   }
@@ -20,12 +20,12 @@ class QuestionToggle extends Component {
   }
 
   render() {
-    console.log(this.state.answer)
+    // console.log(this.state.answer)
     return (
       <div className='Rectangle-5'>
         <button className='Rectangle-5' onClick={() => this.setAnswer()} >
-           <p className="alignleft">{this.props.correct}</p>
-           <p className="alignright">{this.props.incorrect}</p>
+           <p className="alignleft 0">{this.props.correct}</p>
+           <p className="alignright 1">{this.props.incorrect}</p>
 
         </button>
 

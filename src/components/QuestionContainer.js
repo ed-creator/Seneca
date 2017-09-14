@@ -9,8 +9,9 @@ class QuestionContainer extends Component {
     super();
 
     this.state = {
-      answers: false,
-      score: 0,
+      answer_status: 'The answer is incorrect',
+      // score is also used as a display setter
+      score: 0
 
     }
   }
@@ -19,20 +20,28 @@ class QuestionContainer extends Component {
     var self = this
     if(answer == true) { self.setState({score: self.state.score += 1}) }
     if(answer == false) { self.setState({score: self.state.score -= 1}) }
-    debugger;
+    self.checkAnswer()
+  }
+
+  checkAnswer() {
+    const correct = 'The answer is correct'
+    const incorrect = 'The answer is incorrect'
+    if(this.state.score === 3) { this.setState({answer_status: correct})  }
+    if(this.state.score < 3) { this.setState({answer_status: incorrect})  }
+
   }
 
   render() {
     console.log(this.state.score)
     return (
       <div>
-        <div className="Mask">
+        <div className={`MaskV${this.state.score}`}>
           <div className=''>
             <QuestionToggle callback={this.updateScore} id='one' correct={'Hot'} incorrect={'Cold'} value='correct'/>
             <QuestionToggle callback={this.updateScore} id='two' correct={'Option 1'} incorrect={'Option 2'} value='correct'/>
             <QuestionToggle callback={this.updateScore} id='three' correct={'Active'} incorrect={'Not Active'} value='correct'/>
           </div>
-          <p>The answer is incorrect</p>
+          <p>{this.state.answer_status}</p>
           </div>
       </div>
     )
