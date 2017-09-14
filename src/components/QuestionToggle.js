@@ -13,6 +13,7 @@ class QuestionToggle extends Component {
     }
   }
 
+
   setAnswer() {
     // const ans = !this.state
     this.setState({answer: !this.state.answer});

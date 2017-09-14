@@ -1,18 +1,17 @@
 body {
-  margin: 10%;
-  padding: 10%;
   font-family: sans-serif;
 }
 
 .MaskV0 {
+  position: relative;
   padding: 0%;
   width: 710px;
   height: 365px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, rgba(250, 145, 97, 0.7), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
-  top: 50%;
-  left: 50%;
+  left: 350px;
+  top: 100px;
 
 }
 .MaskV1 {
@@ -79,7 +78,27 @@ body {
     background-color: #f44336;
     color: white;
 }
+.Rectangle-6 {
+  width: 1439px;
+  height: 94px;
+  background-image: linear-gradient(269deg, rgba(33, 21, 250, 0.3), rgba(83, 147, 246, 0.82) 68%, #64bff4);
+}
+.navbar-element {
+  position:relative;;
+  left: 400px;
 
+  bottom: -35px;
+  padding: 1.5%;
+  display:inline;
+  width: 38px;
+  height: 14px;
+  opacity: 0.5;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
+  color: #ffffff;
+}
 
 .alignleft {
 	float: left;

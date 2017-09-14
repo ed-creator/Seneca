@@ -1,8 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+// jshint ignore: start
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+import React, {Component} from 'react';
+import App from './App';
+import { mount } from 'enzyme';
+
+describe('App',() => {
+  let app = mount(<App />);
+
+  it('renders the app', () => {
+    // console.log(app.debug())
+    expect(app.find('p.aligncentre').text()).toEqual('The answer is incorrect')
+  });
 });
