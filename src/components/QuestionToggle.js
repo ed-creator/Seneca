@@ -3,17 +3,20 @@
 import React, {Component} from 'react';
 
 class QuestionToggle extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
 
     this.state = {
       answer: false,
+
     }
   }
 
   setAnswer() {
     // const ans = !this.state
-    this.setState({answer: !this.state.answer})
+    this.setState({answer: !this.state.answer});
+    this.props.callback(this.state.answer);
   }
 
   render() {
