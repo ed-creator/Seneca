@@ -6,28 +6,30 @@ class QuestionToggle extends Component {
   constructor(props) {
     super(props);
 
-
     this.state = {
       answer: true,
       slider: 'left'
     }
   }
 
+  componentDidMount() {
+    if(this.props.value === 'incorrect') {this.setState({answer: false, slider: 'left'})}
+  }
 
   setAnswer() {
     this.setState({answer: !this.state.answer});
-    this.props.updateQuestionScores(this.state.answer);
+    this.props.updateQuestionScores(this.state.answer, this.props.id);
     if(this.state.slider === 'left') {this.setState({slider: 'right'})}
-    if(this.state.slider === 'right') {this.setState({slider: 'left'})}
-
+    else {this.setState({slider: 'left'})}
   }
 
   render() {
     return (
       <div >
+        {/* {console.log(this.props)} */}
         <button className='Rectangle-5' onClick={() => this.setAnswer()} >
           <div>
-            <div inline className={`Rectangle-3-${this.state.slider}`}>
+            <div className={`Rectangle-3-${this.state.slider}`}>
               <p className={`left-${this.state.slider}`}>{this.props.correct}</p>
               <p className={`right-${this.state.slider}`}>{this.props.incorrect}</p>
             </div>

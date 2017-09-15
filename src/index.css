@@ -49,6 +49,7 @@ body {
   background-image: linear-gradient(to bottom, rgb(215, 212, 18), rgba(247, 59, 28, 0.69));
   box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5);
 }
+
 .MaskV3 {
   position: absolute;
   margin-left: auto;
@@ -82,7 +83,7 @@ body {
   width: 163px;
   height: 45px;
   border-radius: 100px;
-  background-color: rgb(28, 27, 2);
+  background-color: rgba(249, 249, 249, 0.5);;
   box-shadow: 0 0 6px 1px rgba(195, 51, 51, 0.5);
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
