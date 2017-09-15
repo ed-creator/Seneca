@@ -5,7 +5,7 @@ import QuestionToggle from './QuestionToggle';
 
 import { mount } from 'enzyme';
 
-const props = {id: '1',count: 1, correct: 'Hot', incorrect: 'Cold', value: 'correct'}
+const props = {id: '1',count: 1, left: 'Hot', right: 'Cold', value: 'correct'}
 
 
 

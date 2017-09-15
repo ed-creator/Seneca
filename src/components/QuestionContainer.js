@@ -11,7 +11,7 @@ class QuestionContainer extends Component {
     this.state = {
       // score is used as a display setter & to check if all three answers are correct
       score: 0,
-      // 1 = correct answer, 0 = false answer, this must correspond to each answer value
+      // 1 = correct answer, 0 = incorrect answer, this must correspond to each answer value
       q1: 0,
       q2: 1,
       q3: 1,
@@ -61,11 +61,11 @@ class QuestionContainer extends Component {
       <div>
         <div className={`MaskV${this.state.score}`} >
           <div className='questionbox'>
-            <QuestionToggle updateQuestionScores={this.updateScore} id='1' count={this.state.q1} correct={'Hot'} incorrect={'Cold'} value='correct'/>
+            <QuestionToggle updateQuestionScores={this.updateScore} id='1' count={this.state.q1} left={'Hot'} right={'Cold'} value='correct'/>
           <br/>
-            <QuestionToggle updateQuestionScores={this.updateScore} id='2' count={this.state.q2} correct={'Option 1'} incorrect={'Option 2'} value='incorrect'/>
+            <QuestionToggle updateQuestionScores={this.updateScore} id='2' count={this.state.q2} left={'Option 1'} right={'Option 2'} value='incorrect'/>
             <br/>
-            <QuestionToggle updateQuestionScores={this.updateScore} id='3' count={this.state.q3} correct={'Active'} incorrect={'Not Active'} value='incorrect'/>
+            <QuestionToggle updateQuestionScores={this.updateScore} id='3' count={this.state.q3} left={'Active'} right={'Not Active'} value='incorrect'/>
           </div>
           <p className='aligncentre'>{this.state.answer_status}</p>
           </div>

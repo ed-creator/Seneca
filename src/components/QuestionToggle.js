@@ -30,8 +30,8 @@ class QuestionToggle extends Component {
         <button className='Rectangle-5' onClick={() => this.setAnswer()} >
           <div>
             <div className={`Rectangle-3-${this.state.slider}`}>
-              <p className={`left-${this.state.slider}`}>{this.props.correct}</p>
-              <p className={`right-${this.state.slider}`}>{this.props.incorrect}</p>
+              <p className={`left-${this.state.slider}`}>{this.props.left}</p>
+              <p className={`right-${this.state.slider}`}>{this.props.right}</p>
             </div>
           </div>
         </button>
