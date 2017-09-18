@@ -29,7 +29,7 @@ In order to generate a correct display click on the top question box.
 
 ## Challenges 
 
-There were a few learnings I took when developing the app. 
+There were a few learnings I had when developing the app. 
 
 1. If building it again I would have spent more time selecting the best type of html element to use for the button in each QuestionToggle component. I used a <button> element however I should have also considered radio buttons and checkbox elements, using either of these should have reduced the amount of css work needed and potentially simplifed the passing of state from different Components.
 
